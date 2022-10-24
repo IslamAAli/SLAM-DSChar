@@ -18,4 +18,5 @@ echo
 echo "============================================"
 echo "##### => Running ..               <= #####"
 echo "============================================"
+mkdir ../out_data/reports/KITTI
 ./demo_main KITTI KITTI_config_min.txt
