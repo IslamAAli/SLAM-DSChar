@@ -1,0 +1,10 @@
+base_path /home/islamali/work_area/datasets/EuroC/
+seq_count 1
+stereo y
+imu y
+g_DR_pos 1000
+g_DR_neg 1000
+a_DR_pos 176.58
+a_DR_neg 176.58
+- -
+MH_04_difficult mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt

@@ -1,0 +1,31 @@
+base_path /home/islamali/work_area/datasets/KITTI/data_odometry_gray/dataset/sequences/
+seq_count 22
+stereo y
+imu n
+g_DR_pos 0
+g_DR_neg 0
+a_DR_pos 0
+a_DR_neg 0
+- -
+00 image_0/ image_1/ times.txt times.txt
+01 image_0/ image_1/ times.txt times.txt
+02 image_0/ image_1/ times.txt times.txt
+03 image_0/ image_1/ times.txt times.txt
+04 image_0/ image_1/ times.txt times.txt
+05 image_0/ image_1/ times.txt times.txt
+06 image_0/ image_1/ times.txt times.txt
+07 image_0/ image_1/ times.txt times.txt
+08 image_0/ image_1/ times.txt times.txt
+09 image_0/ image_1/ times.txt times.txt
+10 image_0/ image_1/ times.txt times.txt
+11 image_0/ image_1/ times.txt times.txt
+12 image_0/ image_1/ times.txt times.txt
+13 image_0/ image_1/ times.txt times.txt
+14 image_0/ image_1/ times.txt times.txt
+15 image_0/ image_1/ times.txt times.txt
+16 image_0/ image_1/ times.txt times.txt
+17 image_0/ image_1/ times.txt times.txt
+18 image_0/ image_1/ times.txt times.txt
+19 image_0/ image_1/ times.txt times.txt
+20 image_0/ image_1/ times.txt times.txt
+21 image_0/ image_1/ times.txt times.txt

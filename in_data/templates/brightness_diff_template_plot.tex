@@ -1,0 +1,37 @@
+\begin{tikzpicture}
+\begin{axis}[
+  title = TEMP_TITLE,
+  legend columns=-1,
+  xmin = 0, xmax = TEMP_XMAX,
+  xlabel=Frames,
+  ylabel=$\frac{d B}{dt}$,
+  grid,
+  grid style={dotted},
+  xminorgrids = true, 
+  enlargelimits]
+  
+  \addplot [color = cyan, thin] table {TEMP_FILENAME};
+  
+  \addplot[thick, dashed,red] coordinates {(0,TEMP_MU)(TEMP_SAMPLES,TEMP_MU)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_MU) {$\mu$};
+  
+  \addplot[thick, dashed,blue] coordinates {(0,TEMP_MINUS_1SIGMA)(TEMP_SAMPLES,TEMP_MINUS_1SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_MINUS_1SIGMA) {$-\sigma$};
+
+  \addplot[thick, dashed,blue] coordinates {(0,TEMP_PLUS_1SIGMA)(TEMP_SAMPLES,TEMP_PLUS_1SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_PLUS_1SIGMA) {$+\sigma$};
+  
+  \addplot[thick, dashed,green] coordinates {(0,TEMP_MINUS_2SIGMA)(TEMP_SAMPLES,TEMP_MINUS_2SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_MINUS_2SIGMA) {$-2\sigma$};
+
+  \addplot[thick, dashed,green] coordinates {(0,TEMP_PLUS_2SIGMA)(TEMP_SAMPLES,TEMP_PLUS_2SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_PLUS_2SIGMA) {$+2\sigma$};
+  
+  \addplot[thick, dashed,green] coordinates {(0,TEMP_MINUS_3SIGMA)(TEMP_SAMPLES,TEMP_MINUS_3SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_MINUS_3SIGMA) {$-3\sigma$};
+
+  \addplot[thick, dashed,green] coordinates {(0,TEMP_PLUS_3SIGMA)(TEMP_SAMPLES,TEMP_PLUS_3SIGMA)};
+  \node[] at (axis cs: TEMP_XMAX,TEMP_PLUS_3SIGMA) {$+3\sigma$};
+
+\end{axis}
+\end{tikzpicture}

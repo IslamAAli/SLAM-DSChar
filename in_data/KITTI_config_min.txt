@@ -1,0 +1,10 @@
+base_path /home/islamali/work_area/datasets/KITTI/data_odometry_gray/dataset/sequences/
+seq_count 1
+stereo y
+imu n
+g_DR_pos 0
+g_DR_neg 0
+a_DR_pos 0
+a_DR_neg 0
+- -
+04 image_0/ image_1/ times.txt times.txt

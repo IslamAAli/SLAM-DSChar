@@ -1,0 +1,37 @@
+base_path /media/islamali/SeagateEHD/SLAM_Datasets/tumvi/exported/euroc/512_16/
+seq_count 28
+stereo y
+imu y
+g_DR_pos 2000
+g_DR_neg 2000
+a_DR_pos 156.96
+a_DR_neg 156.96
+- -
+corridor1 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+corridor2 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+corridor3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+corridor4 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+corridor5 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale1 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale2 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale4 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale5 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+magistrale6 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors1 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors2 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors4 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors5 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors6 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors7 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+outdoors8 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room1 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room2 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room4 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room5 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+room6 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+slides1 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+slides2 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+slides3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt

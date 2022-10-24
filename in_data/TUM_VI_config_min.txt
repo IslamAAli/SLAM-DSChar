@@ -1,0 +1,10 @@
+base_path /media/islamali/SeagateEHD/SLAM_Datasets/tumvi/exported/euroc/512_16/
+seq_count 1
+stereo y
+imu y
+g_DR_pos 2000
+g_DR_neg 2000
+a_DR_pos 156.96
+a_DR_neg 156.96
+- -
+magistrale3 mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt

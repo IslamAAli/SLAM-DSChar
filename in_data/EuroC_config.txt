@@ -1,0 +1,20 @@
+base_path /home/islamali/work_area/datasets/EuroC/
+seq_count 11
+stereo y
+imu y
+g_DR_pos 1000
+g_DR_neg 1000
+a_DR_pos 176.58
+a_DR_neg 176.58
+- -
+MH_01_easy mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+MH_02_easy mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+MH_03_medium mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+MH_04_difficult mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+MH_05_difficult mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V1_01_easy mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V1_02_medium mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V1_03_difficult mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V2_01_easy mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V2_02_medium mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
+V2_03_difficult mav0/cam0/data/ mav0/cam1/data/ mav0/cam0/timestamps.txt mav0/cam1/timestamps.txt mav0/imu0/inertial_data.txt mav0/imu0/timestamps.txt
