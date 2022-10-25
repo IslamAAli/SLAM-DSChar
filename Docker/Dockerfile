@@ -4,7 +4,7 @@ MAINTAINER Islam A. Ali <islam.a.mustafa@gmail.com>
 
 # ------------------------------------------------------------------------------------------
 # Definitions
-ENV OPENCV_VERSION 4.1.0
+ENV OPENCV_VERSION 3.4.1
 ENV OPENCV_DOWNLOAD_URL https://github.com/opencv/opencv/archive/$OPENCV_VERSION.zip
 ENV OpenCV_DIR opencv-$OPENCV_VERSION
 ENV EIGEN_VERSION 3.3.2
@@ -92,7 +92,8 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
 			  -DCMAKE_BUILD_TYPE=RELEASE \
 			  -DCMAKE_INSTALL_PREFIX=$(python3.8 -c "import sys; print(sys.prefix)") \
 			  -DOPENCV_EXTRA_MODULES_PATH=/opencv_contrib-${OPENCV_VERSION}/modules \
-			  -DOPENCV_GENERATE_PKGCONFIG=YES .. && \
+			  -DOPENCV_GENERATE_PKGCONFIG=YES \
+			  -D OPENCV_ENABLE_NONFREE=ON .. && \
 			  make -j8 install
 	RUN cp /opencv-4.1.0/build/unix-install/opencv4.pc /usr/lib/pkgconfig/
 	RUN rm /${OPENCV_VERSION}.zip
