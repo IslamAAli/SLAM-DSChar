@@ -77,22 +77,23 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
 	wget https://github.com/opencv/opencv_contrib/archive/${OPENCV_VERSION}.zip -O ${OPENCV_VERSION}-contrib.zip  && \
 	unzip ${OPENCV_VERSION}-contrib.zip && \
 	mkdir opencv-${OPENCV_VERSION}/build && cd opencv-${OPENCV_VERSION}/build  && \
- 	cmake -DBUILD_TIFF=ON \
-			  -DBUILD_opencv_java=OFF \
-			  -DWITH_CUDA=OFF \
-			  -DENABLE_AVX=ON \
-			  -DWITH_OPENGL=ON \
-			  -DWITH_OPENCL=ON \
-			  -DWITH_IPP=ON \
-			  -DWITH_TBB=ON \
-			  -DWITH_EIGEN=ON \
-			  -DWITH_V4L=ON \
-			  -DBUILD_TESTS=OFF \
-			  -DBUILD_PERF_TESTS=OFF \
-			  -DCMAKE_BUILD_TYPE=RELEASE \
-			  -DCMAKE_INSTALL_PREFIX=$(python3.8 -c "import sys; print(sys.prefix)") \
-			  -DOPENCV_EXTRA_MODULES_PATH=/opencv_contrib-${OPENCV_VERSION}/modules \
-			  -DOPENCV_GENERATE_PKGCONFIG=YES \
+ 	cmake -D BUILD_TIFF=ON \
+			  -D BUILD_opencv_java=OFF \
+			  -D WITH_CUDA=OFF \
+			  -D ENABLE_AVX=ON \
+			  -D WITH_OPENGL=ON \
+			  -D WITH_OPENCL=ON \
+			  -D WITH_IPP=ON \
+			  -D WITH_TBB=ON \
+			  -D WITH_EIGEN=ON \
+			  -D WITH_V4L=ON \
+			  -D BUILD_TESTS=OFF \
+			  -D BUILD_PERF_TESTS=OFF \
+			  -D CMAKE_BUILD_TYPE=RELEASE \
+			  -D CMAKE_INSTALL_PREFIX=$(python3.8 -c "import sys; print(sys.prefix)") \
+			  -D OPENCV_EXTRA_MODULES_PATH=/opencv_contrib-${OPENCV_VERSION}/modules \
+			  -D OPENCV_GENERATE_PKGCONFIG=YES \
+			  -D BUILD_opencv_xfeatures2d=ON \
 			  -D OPENCV_ENABLE_NONFREE=ON .. && \
 			  make -j8 install
 	RUN ldconfig
@@ -145,7 +146,7 @@ RUN mkdir -p ~/eigen3 && \
 # 	libpcap-dev \
 # 	libssl-dev
 
-RUN echo "[Dockerfile Info] Installing DSChar ......"
+RUN echo "[Dockerfile Info] Installing DSChar here ......"
 RUN mkdir -p ~/ds_char && \
 	cd ~/ds_char && \
 	git clone https://github.com/IslamAAli/SLAM-DSChar.git && \
