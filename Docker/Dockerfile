@@ -95,7 +95,8 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
 			  -DOPENCV_GENERATE_PKGCONFIG=YES \
 			  -D OPENCV_ENABLE_NONFREE=ON .. && \
 			  make -j8 install
-	RUN cp /opencv-4.1.0/build/unix-install/opencv4.pc /usr/lib/pkgconfig/
+	RUN ldconfig
+	RUN pkg-config --modversion opencv
 	RUN rm /${OPENCV_VERSION}.zip
 	RUN rm /${OPENCV_VERSION}-contrib.zip
 
