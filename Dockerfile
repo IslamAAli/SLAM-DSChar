@@ -4,7 +4,7 @@ MAINTAINER Islam A. Ali <islam.a.mustafa@gmail.com>
 
 # ------------------------------------------------------------------------------------------
 # Definitions
-ENV OPENCV_VERSION 3.4.1
+ENV OPENCV_VERSION 4.1.0
 ENV OPENCV_DOWNLOAD_URL https://github.com/opencv/opencv/archive/$OPENCV_VERSION.zip
 ENV OpenCV_DIR opencv-$OPENCV_VERSION
 ENV EIGEN_VERSION 3.3.2
@@ -97,7 +97,7 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
 			  -D OPENCV_ENABLE_NONFREE=ON .. && \
 			  make -j8 install
 	RUN ldconfig
-	RUN pkg-config --modversion opencv
+	RUN pkg-config --modversion opencv4
 	RUN rm /${OPENCV_VERSION}.zip
 	RUN rm /${OPENCV_VERSION}-contrib.zip
 
@@ -146,15 +146,15 @@ RUN mkdir -p ~/eigen3 && \
 # 	libpcap-dev \
 # 	libssl-dev
 
+WORKDIR ../../
+
 RUN echo "[Dockerfile Info] Installing DSChar here ......"
-RUN mkdir -p ~/ds_char && \
-	cd ~/ds_char && \
-	git clone https://github.com/IslamAAli/SLAM-DSChar.git && \
-	cd SLAM-DSChar/script && \
-	chmod +x kitti_min.sh && \
-	./kitti_min.sh   
-
-
+RUN mkdir -p ds_char
+RUN cd ds_char
+COPY ./ ./ds_char/code
+RUN	cd ds_char/code/script && \
+		chmod +x build_sys.sh && \
+		./build_sys.sh   
 # # ############################################################################################
 # # ############################################################################################
 # # ############################################################################################

@@ -27,7 +27,7 @@ void Features_handler::calc_features_metrics(cv::Mat& m_img, VISUAL_FEATURES m_f
         // detect SIFT features
         case VF_SIFT:
         {
-            cv::Ptr<cv::SiftFeatureDetector> sift_detector = cv::SiftFeatureDetector::create();
+            cv::Ptr<cv::xfeatures2d::SIFT> sift_detector = cv::xfeatures2d::SIFT::create();
             sift_detector->detect(m_img, keypoints);
             break;
         }
