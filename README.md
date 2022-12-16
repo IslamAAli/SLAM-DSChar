@@ -4,8 +4,19 @@ An extendable and generic SLAM dataset analysis and characterization framework s
 ## Characterization Metrics
 A characterization metric is a measurement of a certain quantity that can be used as a partial or a full descriptor of the SLAM dataset. In our system, we currently support general non-sensory metrics, inertial metrics, and visual metrics. The total number of supported metrics is currently at 73 different metrics. 
 
-## User Guide
-TODO
+## Running the Framework
+It is advised to run the docker version of the system in order to have a smooth operation. To do so, you need to first build the docker image:
+```
+./build_docker.sh
+```
+Then, you have to run the docker image, but change the path to mount the dataset you want to characterize.
+```
+./run_docker.sh
+```
+Make sure to update the path to your dataset inside:
+```
+in_data/you_ds_config_file.txt
+```
 
 ## Credit / License 
 This project is developed by Islam A. Ali, as part of my PhD thesis in Computing Science at the University of Alberta, Edmonton, Canada. For researchers/developers wishing to leverage or utilize the code, please use the citation of the paper below:
