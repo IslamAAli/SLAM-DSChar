@@ -1,0 +1,14 @@
+base_path /ds_char/datasets/TUM_RGBD/
+seq_count 5
+stereo y
+imu n
+g_DR_pos 0
+g_DR_neg 0
+a_DR_pos 0
+a_DR_neg 0
+- -
+rgbd_dataset_freiburg1_desk rgb/ rgb/ times.txt times.txt
+rgbd_dataset_freiburg1_desk2 rgb/ rgb/ times.txt times.txt
+rgbd_dataset_freiburg1_plant rgb/ rgb/ times.txt times.txt
+rgbd_dataset_freiburg1_room rgb/ rgb/ times.txt times.txt
+rgbd_dataset_freiburg2_desk rgb/ rgb/ times.txt times.txt

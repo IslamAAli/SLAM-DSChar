@@ -1,0 +1,14 @@
+base_path /ds_char/datasets/TUM_RGBD/
+seq_count 5
+stereo y
+imu n
+g_DR_pos 0
+g_DR_neg 0
+a_DR_pos 0
+a_DR_neg 0
+- -
+fr1_desk rgbd_dataset_freiburg1_desk/rgb/ rgbd_dataset_freiburg1_desk/rgb/ rgbd_dataset_freiburg1_desk/times.txt rgbd_dataset_freiburg1_desk/times.txt
+fr1_desk2 rgbd_dataset_freiburg1_desk2/rgb/ rgbd_dataset_freiburg1_desk2/rgb/ rgbd_dataset_freiburg1_desk2/times.txt rgbd_dataset_freiburg1_desk2/times.txt
+fr1_plant rgbd_dataset_freiburg1_plant/rgb/ rgbd_dataset_freiburg1_plant/rgb/ rgbd_dataset_freiburg1_plant/times.txt rgbd_dataset_freiburg1_plant/times.txt
+fr1_room rgbd_dataset_freiburg1_room/rgb/ rgbd_dataset_freiburg1_room/rgb/ rgbd_dataset_freiburg1_room/times.txt rgbd_dataset_freiburg1_room/times.txt
+fr2_desk rgbd_dataset_freiburg2_desk/rgb/  rgbd_dataset_freiburg2_desk/rgb/ rgbd_dataset_freiburg2_desk/times.txt rgbd_dataset_freiburg2_desk/times.txt
